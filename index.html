@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Finder - Find Experienced Service Providers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-img">📋</div>
+                <span class="logo-text">
+                    <span class="service-text">SERVICE</span>
+                    <span class="finder-text">FINDER</span>
+                </span>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#categories" class="nav-link">CATEGORIES</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#steps" class="nav-link">HOW IT WORKS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">CONTACT</a>
+                </li>
+            </ul>
+
+            <div class="nav-actions">
+                <div class="user-status" id="userStatus">
+                    <button class="user-icon" id="userIcon" aria-label="User Account">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </button>
+                    <div class="user-info-nav">
+                        <span class="user-name-display" id="userNameDisplay">Login</span>
+                        <button class="btn-logout" id="logoutBtn" style="display: none;">Logout</button>
+                    </div>
+                </div>
+                <button class="btn-post-task">POST A TASK</button>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-container">
+            <!-- Image Grid -->
+            <div class="image-grid">
+                <div class="grid-item grid-item-1">
+                    <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=400&h=400&fit=crop"
+                        alt="Worker 1">
+                </div>
+                <div class="grid-item grid-item-2">
+                    <img src="https://images.unsplash.com/photo-1556745753-b2904692b3cd?w=400&h=400&fit=crop"
+                        alt="Worker 2">
+                </div>
+                <div class="grid-item grid-item-3">
+                    <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&h=400&fit=crop"
+                        alt="Worker 3">
+                </div>
+                <div class="grid-item grid-item-4">
+                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=400&h=400&fit=crop"
+                        alt="Worker 4">
+                </div>
+                <div class="grid-item grid-item-5">
+                    <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&h=400&fit=crop"
+                        alt="Worker 5">
+                </div>
+                <div class="grid-item grid-item-6">
+                    <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=400&h=400&fit=crop"
+                        alt="Worker 6">
+                </div>
+                <div class="grid-item grid-item-7">
+                    <img src="https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=400&h=400&fit=crop"
+                        alt="Worker 7">
+                </div>
+                <div class="grid-item grid-item-9">
+                    <img src="https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=400&h=400&fit=crop"
+                        alt="Worker 9">
+                </div>
+                <div class="grid-item grid-item-10">
+                    <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&h=400&fit=crop"
+                        alt="Worker 10">
+                </div>
+                <div class="grid-item grid-item-11">
+                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=400&h=400&fit=crop"
+                        alt="Worker 11">
+                </div>
+                <div class="grid-item grid-item-12">
+                    <img src="https://images.unsplash.com/photo-1556745753-b2904692b3cd?w=400&h=400&fit=crop"
+                        alt="Worker 12">
+                </div>
+            </div>
+
+            <!-- Hero Content -->
+            <div class="hero-content">
+                <div class="rating-badge">
+                    <div class="rating-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                            <path
+                                d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+                        </svg>
+                    </div>
+                    <span class="rating-text">4.9 Rating with 1 Million + Happy Customers</span>
+                </div>
+
+                <h1 class="hero-title">
+                    We Get an <span class="highlight">experienced</span><br>
+                    services providers
+                </h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section" id="categories">
+
+        <div class="categories-container">
+            <!-- Header Badge -->
+            <div class="categories-badge">
+                <div class="badge-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <rect x="3" y="3" width="7" height="7" rx="1" />
+                        <rect x="14" y="3" width="7" height="7" rx="1" />
+                        <rect x="14" y="14" width="7" height="7" rx="1" />
+                        <rect x="3" y="14" width="7" height="7" rx="1" />
+                    </svg>
+                </div>
+                <span class="badge-text">Categories</span>
+            </div>
+
+            <!-- Title -->
+            <div class="categories-header-flex">
+                <h1 class="categories-title">Popular Categories</h1>
+                <div class="search-wrapper">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="categorySearch"
+                        placeholder="Search for services (e.g., Automotive, Cafe)...">
+                </div>
+            </div>
+
+            <!-- Categories Grid -->
+            <div class="categories-grid">
+                <!-- Row 1 -->
+                <div class="category-card"
+                    onclick="ServiceFinder.showCategoryDetails('Automotive', 'Professional vehicle maintenance, detailing, and technical support from certified mechanics.')">
+                    <div class="card-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M5 17h14v-5H5v5zM3 19v-7l2-3h14l2 3v7H3z" />
+                            <circle cx="8" cy="20" r="1" />
+                            <circle cx="16" cy="20" r="1" />
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Automotive</h3>
+                    <p class="card-providers">5 Providers</p>
+                    <p class="card-description">Expert vehicle maintenance and technical support.</p>
+                    <div class="card-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M7 17L17 7M17 7H7M17 7V17" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="category-card"
+                    onclick="ServiceFinder.showCategoryDetails('Beauty and Personal Care', 'Top-tier grooming, skin care, and relaxation therapy from experienced professionals.')">
+                    <div class="card-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M12 2a3 3 0 0 0-3 3v4a3 3 0 1 0 6 0V5a3 3 0 0 0-3-3z" />
+                            <path d="M12 14c-2.5 0-4.5 2-4.5 4.5V22h9v-3.5c0-2.5-2-4.5-4.5-4.5z" />
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Beauty and Personal Care</h3>
+                    <p class="card-providers">2 Providers</p>
+                    <p class="card-description">Grooming and therapeutic relaxation services.</p>
+                    <div class="card-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M7 17L17 7M17 7H7M17 7V17" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="category-card"
+                    onclick="ServiceFinder.showCategoryDetails('Business', 'Comprehensive business consulting, financial planning, and operational strategy for growth.')">
+                    <div class="card-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5" />
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Business</h3>
+                    <p class="card-providers">6 Providers</p>
+                    <p class="card-description">Strategy and consulting for modern enterprises.</p>
+                    <div class="card-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M7 17L17 7M17 7H7M17 7V17" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="category-card featured"
+                    onclick="ServiceFinder.showCategoryDetails('Cab Service', 'Reliable, 24/7 on-demand transportation with vetted drivers and premium vehicles.')">
+                    <div class="card-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
+                            <path d="M5 17h14v-5H5v5zM3 19v-7l2-3h14l2 3v7H3z" />
+                            <circle cx="8" cy="20" r="1" />
+                            <circle cx="16" cy="20" r="1" />
+                            <path d="M12 8V4" />
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Cab Service</h3>
+                    <p class="card-providers">2 Providers</p>
+                    <p class="card-description">Fast and dependable 24/7 city transport.</p>
+                    <div class="card-arrow featured-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M7 17L17 7M17 7H7M17 7V17" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="category-card"
+                    onclick="ServiceFinder.showCategoryDetails('Cafe', 'Artisanal coffee, freshly baked goods, and a cozy atmosphere for work or leisure.')">
+                    <div class="card-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
+                            <line x1="6" y1="1" x2="6" y2="4" />
+                            <line x1="10" y1="1" x2="10" y2="4" />
+                            <line x1="14" y1="1" x2="14" y2="4" />
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Cafe</h3>
+                    <p class="card-providers">1 Providers</p>
+                    <p class="card-description">Cozy spots for premium coffee and snacks.</p>
+                    <div class="card-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M7 17L17 7M17 7H7M17 7V17" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="category-card"
+                    onclick="ServiceFinder.showCategoryDetails('Car care and services', 'From interior detailing to engine tuning, our car care experts ensure your vehicle stays in peak condition.')">
+                    <div class="card-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path
+                                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Car care and services</h3>
+                    <p class="card-providers">3 Providers</p>
+                    <p class="card-description">Total car maintenance and detailing solutions.</p>
+                    <div class="card-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M7 17L17 7M17 7H7M17 7V17" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="category-card"
+                    onclick="ServiceFinder.showCategoryDetails('Car Dealers', 'Connecting you with trusted dealerships for the best deals on new and certified pre-owned vehicles.')">
+                    <div class="card-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="8.5" cy="7" r="4" />
+                            <polyline points="17 11 19 13 23 9" />
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Car Dealers</h3>
+                    <p class="card-providers">4 Providers</p>
+                    <p class="card-description">Verified dealers for new and used vehicles.</p>
+                    <div class="card-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M7 17L17 7M17 7H7M17 7V17" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="category-card"
+                    onclick="ServiceFinder.showCategoryDetails('Car Driving', 'Expert driving instructors and structured lessons to help you master the road safely and confidently.')">
+                    <div class="card-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10" />
+                            <circle cx="12" cy="12" r="6" />
+                            <circle cx="12" cy="12" r="2" />
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Car Driving</h3>
+                    <p class="card-providers">2 Providers</p>
+                    <p class="card-description">Learn to drive with certified instructors.</p>
+                    <div class="card-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M7 17L17 7M17 7H7M17 7V17" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="category-card"
+                    onclick="ServiceFinder.showCategoryDetails('Cardiologist', 'High-quality cardiovascular care and diagnostic services from top-rated heart specialists.')">
+                    <div class="card-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Cardiologist</h3>
+                    <p class="card-providers">5 Providers</p>
+                    <p class="card-description">Specialized heart care and diagnostic services.</p>
+                    <div class="card-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M7 17L17 7M17 7H7M17 7V17" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="category-card"
+                    onclick="ServiceFinder.showCategoryDetails('Carpainter', 'Custom automotive painting and refinishing using premium materials for a showroom finish.')">
+                    <div class="card-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                            <polyline points="9 22 9 12 15 12 15 22" />
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Carpainter</h3>
+                    <p class="card-providers">8 Providers</p>
+                    <p class="card-description">Professional auto-painting and refinishing.</p>
+                    <div class="card-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M7 17L17 7M17 7H7M17 7V17" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Steps Section -->
+    <section class="steps-section" id="steps">
+        <div class="container">
+            <p class="steps-title">🧭 Steps</p>
+            <h1>How Service Finder Works</h1>
+            <p class="subtitle">It's easy to start with us with these simple steps</p>
+
+            <div class="steps-container">
+                <div class="step">
+                    <div class="circle">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828940.png" alt="Describe Task">
+                        <span class="step-number">01</span>
+                    </div>
+                    <h3>Describe Your Task</h3>
+                </div>
+
+                <div class="arrow">➜</div>
+
+                <div class="step">
+                    <div class="circle">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3103/3103446.png" alt="Choose Tasker">
+                        <span class="step-number">02</span>
+                    </div>
+                    <h3>Choose a Tasker</h3>
+                </div>
+
+                <div class="arrow">➜</div>
+
+                <div class="step">
+                    <div class="circle">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4149/4149670.png" alt="Live Smarter">
+                        <span class="step-number">03</span>
+                    </div>
+                    <h3>Live Smarter</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="contact">
+        <div class="footer-container">
+
+            <!-- Contact -->
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <div class="underline"></div>
+                <p><i class="fa-solid fa-location-dot"></i> 13 Whittingehame Drive,<br> Glasgow, G12 0XT</p>
+                <p><i class="fa-solid fa-phone"></i> +1 45278 540</p>
+                <p><i class="fa-solid fa-envelope"></i> username@domain.com</p>
+            </div>
+
+            <!-- For Talent -->
+            <div class="footer-column">
+                <h3>For Talent</h3>
+                <div class="underline"></div>
+                <ul>
+                    <li><i class="fa-solid fa-angle-right"></i> Brands</li>
+                    <li><i class="fa-solid fa-angle-right"></i> Agencies</li>
+                    <li><i class="fa-solid fa-angle-right"></i> Ecommerce</li>
+                    <li><i class="fa-solid fa-angle-right"></i> Marketing Executives</li>
+                </ul>
+            </div>
+
+            <!-- Popular Cities -->
+            <div class="footer-column">
+                <h3>Popular Cities</h3>
+                <div class="underline"></div>
+                <ul>
+                    <li><i class="fa-solid fa-angle-right"></i> Ballston Lake</li>
+                    <li><i class="fa-solid fa-angle-right"></i> Batumi Brooklyn</li>
+                    <li><i class="fa-solid fa-angle-right"></i> Cambridge</li>
+                    <li><i class="fa-solid fa-angle-right"></i> Elmansoura</li>
+                </ul>
+            </div>
+
+            <!-- Site Link -->
+            <div class="footer-column">
+                <h3>Site Link</h3>
+                <div class="underline"></div>
+                <ul>
+                    <li><i class="fa-solid fa-angle-right"></i> Blog</li>
+                    <li><i class="fa-solid fa-angle-right"></i> Contact Us</li>
+                    <li><i class="fa-solid fa-angle-right"></i> Jobs</li>
+                    <li><i class="fa-solid fa-angle-right"></i> Post a Job</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025. All Rights are Reserved</p>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to Top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Post a Task Modal -->
+    <div class="modal" id="taskModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">&times;</button>
+            <div class="modal-header">
+                <h2>Post a New Task</h2>
+                <p>Describe what you need, and we'll find the right expert for you.</p>
+            </div>
+            <form id="taskForm" class="modal-form">
+                <div class="form-group">
+                    <label for="taskTitle">What service do you need?</label>
+                    <input type="text" id="taskTitle" placeholder="e.g., Home Cleaning, Car Repair" required>
+                </div>
+                <div class="form-group">
+                    <label for="taskDetails">Details (Optional)</label>
+                    <textarea id="taskDetails" rows="4"
+                        placeholder="Describe your requirements in more detail..."></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="taskDate">Preferred Date</label>
+                        <input type="date" id="taskDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="taskBudget">Estimated Budget ($)</label>
+                        <input type="number" id="taskBudget" placeholder="100">
+                    </div>
+                </div>
+                <button type="submit" class="btn-submit-task">SUBMIT TASK REQUEST</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Auth Modal (User/Provider Login) -->
+    <div class="modal" id="authModal">
+        <div class="modal-overlay" id="authModalOverlay"></div>
+        <div class="modal-content auth-modal-content">
+            <button class="modal-close" id="closeAuthModal">&times;</button>
+            <div class="auth-tabs">
+                <button class="auth-tab active" data-tab="user">USER LOGIN</button>
+                <button class="auth-tab" data-tab="provider">PROVIDER LOGIN</button>
+            </div>
+
+            <!-- User Login Form -->
+            <form id="userLoginForm" class="auth-form active">
+                <div class="modal-header">
+                    <h2>Welcome Back</h2>
+                    <p>Log in to manage your tasks and bookings.</p>
+                </div>
+                <div class="form-group">
+                    <label for="userEmail">Email Address</label>
+                    <input type="email" id="userEmail" placeholder="user@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="userPassword">Password</label>
+                    <input type="password" id="userPassword" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn-submit-task">LOGIN AS USER</button>
+                <p class="auth-toggle">Don't have an account? <a href="#" id="showSignup">Sign Up</a></p>
+            </form>
+
+            <!-- User Signup Form -->
+            <form id="userSignupForm" class="auth-form">
+                <div class="modal-header">
+                    <h2>Join Service Finder</h2>
+                    <p>Create an account to start posting tasks.</p>
+                </div>
+                <div class="form-group">
+                    <label for="signupName">Full Name</label>
+                    <input type="text" id="signupName" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email Address</label>
+                    <input type="email" id="signupEmail" placeholder="john@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn-submit-task">CREATE ACCOUNT</button>
+                <p class="auth-toggle">Already have an account? <a href="#" id="showLogin">Login</a></p>
+            </form>
+
+
+            <!-- Provider Login Form -->
+            <form id="providerLoginForm" class="auth-form">
+                <div class="modal-header">
+                    <h2>Provider Access</h2>
+                    <p>Access your dashboard and confirm service requests.</p>
+                </div>
+                <div class="form-group">
+                    <label for="providerEmail">Provider Email</label>
+                    <input type="email" id="providerEmail" placeholder="provider@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="providerPassword">Password</label>
+                    <input type="password" id="providerPassword" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn-submit-task" style="background: var(--secondary);">LOGIN AS
+                    PROVIDER</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Dashboard Modal -->
+    <div class="modal" id="dashboardModal">
+        <div class="modal-overlay" id="dashboardModalOverlay"></div>
+        <div class="modal-content dashboard-modal-content">
+            <button class="modal-close" id="closeDashboardModal">&times;</button>
+            <div class="modal-header">
+                <h2 id="dashboardTitle">Your Dashboard</h2>
+                <p id="dashboardSubtitle">Manage your active service requests.</p>
+            </div>
+
+            <div class="dashboard-stats" id="dashboardStats">
+                <!-- Stats injected by JS -->
+            </div>
+
+            <div class="request-list" id="requestList">
+                <!-- Requests injected by JS -->
+                <div class="empty-state">
+                    <p>No active requests found.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Provider Details Modal (Who is coming) -->
+    <div class="modal" id="providerDetailModal">
+        <div class="modal-overlay" id="providerDetailOverlay"></div>
+        <div class="modal-content detail-modal-content">
+            <button class="modal-close" id="closeDetailModal">&times;</button>
+            <div class="modal-header">
+                <h2>Provider Details</h2>
+                <p>The expert assigned to your task.</p>
+            </div>
+            <div class="provider-detail-card" id="providerDetailCard">
+                <!-- Details injected by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Link JavaScript File -->
+    <script src="script.js"></script>
+</body>
+
+</html>

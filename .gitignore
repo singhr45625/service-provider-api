@@ -1,0 +1,4 @@
+node_modules/
+service_finder.db
+.env
+.DS_Store
