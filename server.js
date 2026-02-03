@@ -10,6 +10,11 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(express.static('./')); // Serve frontend files
 
+// Health check
+app.get('/health', (req, res) => {
+    res.json({ status: 'ok', database: process.env.DATABASE_URL ? 'postgres' : 'sqlite' });
+});
+
 // AUTH ENDPOINTS
 app.post('/api/login', (req, res) => {
     const { email, password, role } = req.body;
