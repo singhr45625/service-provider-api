@@ -1,5 +1,5 @@
 const ServiceFinder = (() => {
-    const API_URL = '/api';
+    const API_URL = 'https://service-provider-api-q8mp.onrender.com/api';
 
     // State Management
     const state = {

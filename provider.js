@@ -1,5 +1,5 @@
 const ProviderApp = (() => {
-    const API_URL = '/api';
+    const API_URL = 'https://service-provider-api-q8mp.onrender.com/api';
     const state = {
         currentUser: JSON.parse(localStorage.getItem('sfUser')) || null,
         availableJobs: [],
